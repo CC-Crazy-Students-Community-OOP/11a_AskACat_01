@@ -7,14 +7,14 @@ public class Cat extends Pet{
 	/**
 	 * @param name
 	 */
-	public Cat(String name) {
+	public Cat( String name ) {
 		this.name = name;
 	}
 
-	// Pet pet möglich, da Cat/Dog SubTypen von Pet sind (Polymorphie)
-	public String getName(Pet pet, String callerName) {
-		if (Controller.isCallerACat(pet)) {
-			if (callerName != name) {
+	// Pet pet möglich, da Cat/Dog SubTypen von Pet sind ( Polymorphie )
+	public String getName( Pet pet, String callerName ) {
+		if ( Controller.isCallerACat( pet ) ) {
+			if ( callerName != name ) {
 				return "Hi " + callerName + ", my name is " + name + ".";
 			} else {
 				return "Yes, sometimes you don't know who you are, " + name +".";
@@ -31,7 +31,7 @@ public class Cat extends Pet{
 	
 	// irgendeine Katze nach dem Namen fragen
 	public String askACat() {
-		return Controller.getSomeRandomCat().getName(this, name);
+		return Controller.getSomeRandomCat().getName( this, name );
 	}
 
 }

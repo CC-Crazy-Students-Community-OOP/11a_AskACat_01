@@ -7,7 +7,7 @@ public class Dog extends Pet{
 	/**
 	 * @param name
 	 */
-	public Dog(String name) {
+	public Dog( String name ) {
 		this.name = name;
 	}
 
@@ -25,7 +25,7 @@ public class Dog extends Pet{
 
 	// irgendeine Katze nach dem Namen fragen cat.getName()
 	public String askACat() {
-		return Controller.getSomeRandomCat().getName(this, name);
+		return Controller.getSomeRandomCat().getName( this, name );
 	}
 	
 }

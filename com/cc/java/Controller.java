@@ -11,26 +11,26 @@ public class Controller {
 	private static Random random = new Random();
 	
 	
-	public static void addNewDog(String name) {
-		dogsList.add(new Dog(name));
+	public static void addNewDog( String name ) {
+		dogsList.add( new Dog( name ) );
 	}
 	
-	public static void addNewCat(String name) {
-		catsList.add(new Cat(name));
+	public static void addNewCat( String name ) {
+		catsList.add( new Cat( name ) );
 	}
 	
 	// ein Art Getter ...
 	public static Dog getSomeRandomDog() {
-		return dogsList.get(random.nextInt(dogsList.size()));
+		return dogsList.get( random.nextInt( dogsList.size() ) );
 	}
 	
 	public static Cat getSomeRandomCat() {
-		return catsList.get(random.nextInt(catsList.size()));
+		return catsList.get( random.nextInt( catsList.size() ) );
 	}
 
 	// Service ... ist pet eine Katze?? ja/nein
-	public static boolean isCallerACat(Pet pet) {
-		return catsList.contains(pet);
+	public static boolean isCallerACat( Pet pet ) {
+		return catsList.contains( pet );
 	}
 	
 }
